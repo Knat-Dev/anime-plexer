@@ -1,10 +1,9 @@
-require('dotenv').config();
 
 import arg from 'arg';
 import fs from 'fs/promises';
 import inquirer from 'inquirer';
 import { renameShow } from './MDBApi';
-console.log(process.env.API_URL);
+
 const parseArgumentsIntoOptions = (rawArgs) => {
   try {
     const args = arg({
